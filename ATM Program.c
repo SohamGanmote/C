@@ -12,8 +12,8 @@ int main()
     int n;
     int temp;
     int cash;
-    int x;
-    int b;
+    int temp2;
+    int count = 0;
 
     balance = 0;
     n = 9325;
@@ -99,16 +99,16 @@ start2:
                 printf("Enter New Pin : ");
                 scanf("%d", &n);
                 temp = n;
-                int x = 0;
                 while (n != 0)
                 {
-                    b = n % 10;
+                    temp2 = n % 10;
                     n = n / 10;
-                    x++;
+                    count++;
                 }
-                if (x >= 5)
+                if (count >= 5)
                 {
                     printf("Enter 4 digite Pin\n");
+                    count = 0;
                     goto start3;
                 }
                 printf("Conferm New Pin : ");
