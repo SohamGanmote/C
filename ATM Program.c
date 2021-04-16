@@ -85,7 +85,7 @@ start2:
             goto start5;
             break;
         case 3:
-            printf("\nName : Soham Dayasagr Ganmote\nDOB : 6 Feb 2003\nPhone No : 9325293606\nBalance : %d", cash);
+            printf("\nName : Soham Dayasagr Ganmote\nDOB : 6 Feb 2003\nPhone No : 98232300572\nBalance : %d", cash);
             goto start5;
             break;
         case 4:
