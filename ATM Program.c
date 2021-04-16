@@ -1,5 +1,6 @@
 //WAP of ATM ; Pin = 9325
 #include <stdio.h>
+
 int main()
 {
     int pin;
@@ -11,6 +12,8 @@ int main()
     int n;
     int temp;
     int cash;
+    int x;
+    int b;
 
     balance = 0;
     n = 9325;
@@ -96,6 +99,18 @@ start2:
                 printf("Enter New Pin : ");
                 scanf("%d", &n);
                 temp = n;
+                int x = 0;
+                while (n != 0)
+                {
+                    b = n % 10;
+                    n = n / 10;
+                    x++;
+                }
+                if (x >= 5)
+                {
+                    printf("Enter 4 digite Pin\n");
+                    goto start3;
+                }
                 printf("Conferm New Pin : ");
                 scanf("%d", &temp);
                 if (n == temp)
