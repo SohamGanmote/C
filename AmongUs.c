@@ -27,7 +27,7 @@ int main()
     {
         c = 35;
     }
-   
+
     printf("\033[0;32mX X X X X X X X X X X X X X X X\n"); //Green Colour
 
     printf("\033[0;32mX X X X X X");  //Green Colour
@@ -166,4 +166,5 @@ int main()
     printf("\033[0;32m X X\n");   //Green Colour
 
     printf("\033[0;32mX X X X X X X X X X X X X X X X\n"); //Green Colour
+    printf("\033[0m");
 }
